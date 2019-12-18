@@ -75,12 +75,14 @@ class Operators extends Model {
   static get jsonSchema() {
     return {
       type: "object",
-      required: ["time", "location"],
+      required: ["aNumber", "name", "schedule", "supervisor"],
 
       properties: {
         id: { type: "integer" },
-        supervisor_id: { type: "integer" },
-        operator_id: { type: "integer" }
+        aNumber: { type: "string" },
+        name: { type: "string" },
+        schedule: { type: "string" },
+        supervisor: { type: "string" }
       }
     };
   }

@@ -49,14 +49,6 @@ class Schedules extends Model {
   static get relationMappings() {
     const Operators = require("./Operators");
     return {
-      //   operators: {
-      //     relation: Model.HasManyRelation,
-      //     modelClass: Operators,
-      //     join: {
-      //       from: "schedule.id",
-      //       to: "operator.id"
-      //     }
-      //   },
       operators: {
         relation: Model.ManyToManyRelation,
         modelClass: Operators,
@@ -75,11 +67,20 @@ class Schedules extends Model {
   static get jsonSchema() {
     return {
       type: "object",
-      required: ["time", "location"],
+      required: [
+        "daysOff",
+        "fromHours",
+        "fromMinutes",
+        "untilHours",
+        "untilMinutes"
+      ],
 
       properties: {
-        schedule_id: { type: "integer" },
-        operator_id: { type: "integer" }
+        daysOff: { type: "array" },
+        fromHours: { type: "string" },
+        fromMinutes: { type: "string" },
+        untilHours: { type: "string" },
+        untilMinutes: { type: "string" }
       }
     };
   }

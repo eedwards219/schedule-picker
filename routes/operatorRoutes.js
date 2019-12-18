@@ -17,6 +17,7 @@ router.get("/:id", function(req, res, next) {
 });
 
 router.post("/", function(req, res) {
+  console.log("req.body", req.body);
   Operators.query()
     .insert(req.body)
     .then(result => res.json(result))

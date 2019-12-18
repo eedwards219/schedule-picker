@@ -5,14 +5,14 @@ const Schedules = require("../models/Schedules");
 /* GET home page. */
 router.get("/", function(req, res, next) {
   Schedules.query()
-    .eager("schedules")
+    .eager("operators")
     .then(result => res.send(result));
 });
 
 router.get("/:id", function(req, res, next) {
   Schedules.query()
     .findById(req.params.id)
-    .eager("schedules")
+    .eager("operators")
     .then(result => res.send(result));
 });
 

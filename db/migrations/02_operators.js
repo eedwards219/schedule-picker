@@ -2,9 +2,10 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable("operators", table => {
     table.increments();
     table.string("name").notNullable();
-    table.string("serialNumber").notNullable();
-    table.string("hireDate").notNullable();
-    table.timestamps(true, true);
+    table.string("aNumber").notNullable();
+    table.string("supervisor").notNullable();
+    table.string("schedule").notNullable();
+    table.string("role").notNullable();
   });
 };
 

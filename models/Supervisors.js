@@ -74,11 +74,13 @@ class Supervisors extends Model {
   static get jsonSchema() {
     return {
       type: "object",
-      required: ["time"],
+      required: ["name", "aNumber", "schedule", "role"],
 
       properties: {
-        id: { type: "integer" },
-        time: { type: "string" }
+        name: { type: "string" },
+        aNumber: { type: "string" },
+        schedule: { type: "string" },
+        role: { type: "string" }
       }
     };
   }

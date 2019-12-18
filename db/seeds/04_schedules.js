@@ -1,4 +1,12 @@
-// '{{lorem(1, "words")}}'
+// [
+//     '{{repeat(200)}}',
+//     {
+//       daysOff:  '{{lorem(3, "words")}}',
+//        fromHours: '{{integer(0, 24)}}',
+//   fromMinutes: '{{integer(0, 60)}}',
+//   untilHours: '{{integer(0, 24)}}',
+//       untilMinutes: '{{integer(0, 60)}}'}]
+
 exports.seed = function(knex, Promise) {
   return knex("schedules")
     .del()
@@ -6,804 +14,1404 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex("schedules").insert([
         {
-          time: "1895-122",
-          daysOff: "aute labore sunt"
+          daysOff: "id cillum quis",
+          fromHours: 14,
+          fromMinutes: 27,
+          untilHours: 15,
+          untilMinutes: 9
         },
         {
-          time: "1309-1368",
-          daysOff: "ex dolor irure"
+          daysOff: "anim id anim",
+          fromHours: 3,
+          fromMinutes: 55,
+          untilHours: 13,
+          untilMinutes: 49
         },
         {
-          time: "1851-594",
-          daysOff: "ex pariatur ullamco"
+          daysOff: "eu non excepteur",
+          fromHours: 15,
+          fromMinutes: 34,
+          untilHours: 14,
+          untilMinutes: 2
         },
         {
-          time: "824-2046",
-          daysOff: "ipsum irure consectetur"
+          daysOff: "exercitation veniam laboris",
+          fromHours: 10,
+          fromMinutes: 51,
+          untilHours: 21,
+          untilMinutes: 11
         },
         {
-          time: "2354-1082",
-          daysOff: "mollit commodo culpa"
+          daysOff: "adipisicing consectetur voluptate",
+          fromHours: 5,
+          fromMinutes: 1,
+          untilHours: 0,
+          untilMinutes: 35
         },
         {
-          time: "219-2268",
-          daysOff: "sunt incididunt irure"
+          daysOff: "reprehenderit nulla ut",
+          fromHours: 4,
+          fromMinutes: 17,
+          untilHours: 4,
+          untilMinutes: 42
         },
         {
-          time: "771-28",
-          daysOff: "ad tempor aute"
+          daysOff: "id magna ad",
+          fromHours: 18,
+          fromMinutes: 16,
+          untilHours: 5,
+          untilMinutes: 53
         },
         {
-          time: "2274-1357",
-          daysOff: "anim cupidatat duis"
+          daysOff: "id culpa consequat",
+          fromHours: 9,
+          fromMinutes: 54,
+          untilHours: 1,
+          untilMinutes: 4
         },
         {
-          time: "141-458",
-          daysOff: "nulla dolore occaecat"
+          daysOff: "ex tempor aliqua",
+          fromHours: 5,
+          fromMinutes: 10,
+          untilHours: 23,
+          untilMinutes: 32
         },
         {
-          time: "785-629",
-          daysOff: "minim Lorem deserunt"
+          daysOff: "Lorem dolor excepteur",
+          fromHours: 20,
+          fromMinutes: 50,
+          untilHours: 2,
+          untilMinutes: 41
         },
         {
-          time: "1159-1681",
-          daysOff: "exercitation ipsum do"
+          daysOff: "deserunt ut occaecat",
+          fromHours: 16,
+          fromMinutes: 13,
+          untilHours: 13,
+          untilMinutes: 47
         },
         {
-          time: "1644-1303",
-          daysOff: "amet esse enim"
+          daysOff: "aliqua laborum dolor",
+          fromHours: 12,
+          fromMinutes: 24,
+          untilHours: 13,
+          untilMinutes: 34
         },
         {
-          time: "794-13",
-          daysOff: "in esse nulla"
+          daysOff: "nulla consectetur aliqua",
+          fromHours: 9,
+          fromMinutes: 3,
+          untilHours: 8,
+          untilMinutes: 49
         },
         {
-          time: "832-2092",
-          daysOff: "et sunt Lorem"
+          daysOff: "enim nisi elit",
+          fromHours: 6,
+          fromMinutes: 53,
+          untilHours: 21,
+          untilMinutes: 37
         },
         {
-          time: "2124-2091",
-          daysOff: "officia aliquip proident"
+          daysOff: "ullamco do nisi",
+          fromHours: 0,
+          fromMinutes: 20,
+          untilHours: 17,
+          untilMinutes: 48
         },
         {
-          time: "1363-64",
-          daysOff: "eiusmod fugiat ea"
+          daysOff: "consequat ut laboris",
+          fromHours: 24,
+          fromMinutes: 55,
+          untilHours: 9,
+          untilMinutes: 48
         },
         {
-          time: "1789-1674",
-          daysOff: "consequat esse reprehenderit"
+          daysOff: "irure magna duis",
+          fromHours: 18,
+          fromMinutes: 44,
+          untilHours: 1,
+          untilMinutes: 49
         },
         {
-          time: "1643-843",
-          daysOff: "qui mollit magna"
+          daysOff: "voluptate mollit eiusmod",
+          fromHours: 19,
+          fromMinutes: 24,
+          untilHours: 9,
+          untilMinutes: 26
         },
         {
-          time: "473-627",
-          daysOff: "aliquip id adipisicing"
+          daysOff: "eu magna reprehenderit",
+          fromHours: 13,
+          fromMinutes: 22,
+          untilHours: 1,
+          untilMinutes: 39
         },
         {
-          time: "508-2310",
-          daysOff: "occaecat eu consectetur"
+          daysOff: "excepteur ad reprehenderit",
+          fromHours: 18,
+          fromMinutes: 53,
+          untilHours: 9,
+          untilMinutes: 44
         },
         {
-          time: "1783-878",
-          daysOff: "velit in Lorem"
+          daysOff: "eiusmod ullamco labore",
+          fromHours: 24,
+          fromMinutes: 1,
+          untilHours: 11,
+          untilMinutes: 1
         },
         {
-          time: "17-2321",
-          daysOff: "nulla velit id"
+          daysOff: "ipsum eu magna",
+          fromHours: 15,
+          fromMinutes: 8,
+          untilHours: 17,
+          untilMinutes: 14
         },
         {
-          time: "1381-775",
-          daysOff: "adipisicing occaecat est"
+          daysOff: "ullamco quis do",
+          fromHours: 9,
+          fromMinutes: 37,
+          untilHours: 23,
+          untilMinutes: 4
         },
         {
-          time: "283-263",
-          daysOff: "voluptate sit do"
+          daysOff: "pariatur elit ex",
+          fromHours: 18,
+          fromMinutes: 4,
+          untilHours: 22,
+          untilMinutes: 7
         },
         {
-          time: "808-1260",
-          daysOff: "Lorem sit nisi"
+          daysOff: "duis proident magna",
+          fromHours: 17,
+          fromMinutes: 20,
+          untilHours: 1,
+          untilMinutes: 12
         },
         {
-          time: "2334-161",
-          daysOff: "duis velit aute"
+          daysOff: "ipsum sit nisi",
+          fromHours: 24,
+          fromMinutes: 20,
+          untilHours: 22,
+          untilMinutes: 4
         },
         {
-          time: "2386-313",
-          daysOff: "cillum adipisicing eu"
+          daysOff: "ad occaecat nisi",
+          fromHours: 11,
+          fromMinutes: 45,
+          untilHours: 14,
+          untilMinutes: 30
         },
         {
-          time: "2229-2137",
-          daysOff: "ea enim velit"
+          daysOff: "eu magna Lorem",
+          fromHours: 16,
+          fromMinutes: 50,
+          untilHours: 14,
+          untilMinutes: 41
         },
         {
-          time: "873-1295",
-          daysOff: "eu esse enim"
+          daysOff: "fugiat do et",
+          fromHours: 14,
+          fromMinutes: 27,
+          untilHours: 10,
+          untilMinutes: 43
         },
         {
-          time: "1608-433",
-          daysOff: "reprehenderit sunt velit"
+          daysOff: "tempor nulla aliquip",
+          fromHours: 15,
+          fromMinutes: 24,
+          untilHours: 15,
+          untilMinutes: 26
         },
         {
-          time: "864-1165",
-          daysOff: "incididunt irure ipsum"
+          daysOff: "excepteur Lorem incididunt",
+          fromHours: 6,
+          fromMinutes: 12,
+          untilHours: 13,
+          untilMinutes: 30
         },
         {
-          time: "1446-174",
-          daysOff: "Lorem excepteur ex"
+          daysOff: "amet magna in",
+          fromHours: 18,
+          fromMinutes: 58,
+          untilHours: 13,
+          untilMinutes: 14
         },
         {
-          time: "970-2259",
-          daysOff: "aute magna qui"
+          daysOff: "et pariatur eiusmod",
+          fromHours: 10,
+          fromMinutes: 25,
+          untilHours: 20,
+          untilMinutes: 58
         },
         {
-          time: "1102-313",
-          daysOff: "magna labore anim"
+          daysOff: "laboris voluptate id",
+          fromHours: 19,
+          fromMinutes: 36,
+          untilHours: 4,
+          untilMinutes: 43
         },
         {
-          time: "2179-1712",
-          daysOff: "officia minim irure"
+          daysOff: "ipsum ullamco elit",
+          fromHours: 7,
+          fromMinutes: 5,
+          untilHours: 9,
+          untilMinutes: 58
         },
         {
-          time: "669-1245",
-          daysOff: "culpa adipisicing sint"
+          daysOff: "esse laborum sit",
+          fromHours: 17,
+          fromMinutes: 44,
+          untilHours: 13,
+          untilMinutes: 5
         },
         {
-          time: "1090-578",
-          daysOff: "cupidatat et aliquip"
+          daysOff: "minim quis exercitation",
+          fromHours: 4,
+          fromMinutes: 36,
+          untilHours: 13,
+          untilMinutes: 58
         },
         {
-          time: "1150-11",
-          daysOff: "aliqua do sunt"
+          daysOff: "labore id non",
+          fromHours: 15,
+          fromMinutes: 30,
+          untilHours: 5,
+          untilMinutes: 25
         },
         {
-          time: "977-540",
-          daysOff: "commodo eiusmod dolor"
+          daysOff: "amet ullamco qui",
+          fromHours: 10,
+          fromMinutes: 9,
+          untilHours: 4,
+          untilMinutes: 28
         },
         {
-          time: "35-1361",
-          daysOff: "elit elit elit"
+          daysOff: "pariatur do ipsum",
+          fromHours: 15,
+          fromMinutes: 27,
+          untilHours: 19,
+          untilMinutes: 57
         },
         {
-          time: "435-69",
-          daysOff: "cupidatat ex eiusmod"
+          daysOff: "eu id sunt",
+          fromHours: 15,
+          fromMinutes: 50,
+          untilHours: 3,
+          untilMinutes: 59
         },
         {
-          time: "1230-2376",
-          daysOff: "ad laboris est"
+          daysOff: "aliquip magna aliquip",
+          fromHours: 0,
+          fromMinutes: 24,
+          untilHours: 6,
+          untilMinutes: 49
         },
         {
-          time: "1913-346",
-          daysOff: "incididunt fugiat adipisicing"
+          daysOff: "in dolore aliquip",
+          fromHours: 20,
+          fromMinutes: 11,
+          untilHours: 15,
+          untilMinutes: 54
         },
         {
-          time: "505-1219",
-          daysOff: "commodo incididunt consequat"
+          daysOff: "consectetur amet est",
+          fromHours: 12,
+          fromMinutes: 59,
+          untilHours: 8,
+          untilMinutes: 57
         },
         {
-          time: "1706-1032",
-          daysOff: "sint esse ex"
+          daysOff: "in fugiat ut",
+          fromHours: 9,
+          fromMinutes: 10,
+          untilHours: 4,
+          untilMinutes: 8
         },
         {
-          time: "82-1515",
-          daysOff: "excepteur sint ea"
+          daysOff: "consectetur dolore sunt",
+          fromHours: 19,
+          fromMinutes: 35,
+          untilHours: 22,
+          untilMinutes: 60
         },
         {
-          time: "1802-2227",
-          daysOff: "ullamco exercitation aute"
+          daysOff: "aliqua amet mollit",
+          fromHours: 7,
+          fromMinutes: 52,
+          untilHours: 1,
+          untilMinutes: 40
         },
         {
-          time: "1017-1404",
-          daysOff: "cupidatat ullamco duis"
+          daysOff: "consequat cupidatat velit",
+          fromHours: 22,
+          fromMinutes: 26,
+          untilHours: 5,
+          untilMinutes: 39
         },
         {
-          time: "1321-1060",
-          daysOff: "magna ullamco mollit"
+          daysOff: "adipisicing ullamco voluptate",
+          fromHours: 14,
+          fromMinutes: 43,
+          untilHours: 13,
+          untilMinutes: 54
         },
         {
-          time: "1768-782",
-          daysOff: "minim commodo dolore"
+          daysOff: "eu cillum laboris",
+          fromHours: 16,
+          fromMinutes: 21,
+          untilHours: 18,
+          untilMinutes: 9
         },
         {
-          time: "1237-2066",
-          daysOff: "fugiat fugiat ex"
+          daysOff: "nulla occaecat reprehenderit",
+          fromHours: 16,
+          fromMinutes: 53,
+          untilHours: 22,
+          untilMinutes: 22
         },
         {
-          time: "564-1629",
-          daysOff: "duis laboris voluptate"
+          daysOff: "laborum qui laboris",
+          fromHours: 0,
+          fromMinutes: 45,
+          untilHours: 2,
+          untilMinutes: 57
         },
         {
-          time: "1478-2332",
-          daysOff: "sunt magna laborum"
+          daysOff: "amet et duis",
+          fromHours: 22,
+          fromMinutes: 60,
+          untilHours: 1,
+          untilMinutes: 13
         },
         {
-          time: "1530-506",
-          daysOff: "reprehenderit pariatur sit"
+          daysOff: "in mollit ullamco",
+          fromHours: 16,
+          fromMinutes: 58,
+          untilHours: 11,
+          untilMinutes: 4
         },
         {
-          time: "462-546",
-          daysOff: "dolore ad adipisicing"
+          daysOff: "nisi laborum esse",
+          fromHours: 11,
+          fromMinutes: 53,
+          untilHours: 4,
+          untilMinutes: 15
         },
         {
-          time: "884-355",
-          daysOff: "aliqua ea et"
+          daysOff: "nostrud nisi occaecat",
+          fromHours: 2,
+          fromMinutes: 0,
+          untilHours: 13,
+          untilMinutes: 56
         },
         {
-          time: "2098-824",
-          daysOff: "velit irure culpa"
+          daysOff: "dolore adipisicing eu",
+          fromHours: 24,
+          fromMinutes: 54,
+          untilHours: 21,
+          untilMinutes: 15
         },
         {
-          time: "1079-2039",
-          daysOff: "incididunt nostrud esse"
+          daysOff: "laboris dolore mollit",
+          fromHours: 16,
+          fromMinutes: 60,
+          untilHours: 20,
+          untilMinutes: 47
         },
         {
-          time: "611-595",
-          daysOff: "eiusmod id exercitation"
+          daysOff: "aute non deserunt",
+          fromHours: 1,
+          fromMinutes: 40,
+          untilHours: 12,
+          untilMinutes: 14
         },
         {
-          time: "982-2318",
-          daysOff: "quis veniam esse"
+          daysOff: "velit nulla laborum",
+          fromHours: 18,
+          fromMinutes: 41,
+          untilHours: 1,
+          untilMinutes: 36
         },
         {
-          time: "1077-2285",
-          daysOff: "nostrud nulla ex"
+          daysOff: "Lorem ut aliquip",
+          fromHours: 14,
+          fromMinutes: 29,
+          untilHours: 14,
+          untilMinutes: 12
         },
         {
-          time: "600-857",
-          daysOff: "dolor aute voluptate"
+          daysOff: "amet sunt anim",
+          fromHours: 24,
+          fromMinutes: 29,
+          untilHours: 12,
+          untilMinutes: 10
         },
         {
-          time: "848-2143",
-          daysOff: "occaecat commodo et"
+          daysOff: "labore exercitation reprehenderit",
+          fromHours: 20,
+          fromMinutes: 24,
+          untilHours: 4,
+          untilMinutes: 9
         },
         {
-          time: "1984-1537",
-          daysOff: "qui cillum sunt"
+          daysOff: "non est esse",
+          fromHours: 3,
+          fromMinutes: 34,
+          untilHours: 22,
+          untilMinutes: 32
         },
         {
-          time: "811-2325",
-          daysOff: "sunt duis enim"
+          daysOff: "dolor anim incididunt",
+          fromHours: 1,
+          fromMinutes: 42,
+          untilHours: 1,
+          untilMinutes: 16
         },
         {
-          time: "1068-1344",
-          daysOff: "Lorem non culpa"
+          daysOff: "consequat mollit deserunt",
+          fromHours: 18,
+          fromMinutes: 6,
+          untilHours: 9,
+          untilMinutes: 11
         },
         {
-          time: "940-417",
-          daysOff: "laboris minim nisi"
+          daysOff: "dolor enim elit",
+          fromHours: 19,
+          fromMinutes: 60,
+          untilHours: 23,
+          untilMinutes: 22
         },
         {
-          time: "350-2038",
-          daysOff: "duis adipisicing consectetur"
+          daysOff: "irure amet mollit",
+          fromHours: 16,
+          fromMinutes: 28,
+          untilHours: 15,
+          untilMinutes: 15
         },
         {
-          time: "835-519",
-          daysOff: "et elit pariatur"
+          daysOff: "consequat consectetur ullamco",
+          fromHours: 18,
+          fromMinutes: 18,
+          untilHours: 18,
+          untilMinutes: 29
         },
         {
-          time: "1336-770",
-          daysOff: "amet do dolore"
+          daysOff: "aute et fugiat",
+          fromHours: 12,
+          fromMinutes: 48,
+          untilHours: 9,
+          untilMinutes: 18
         },
         {
-          time: "1003-1316",
-          daysOff: "culpa non sint"
+          daysOff: "eu est ad",
+          fromHours: 16,
+          fromMinutes: 54,
+          untilHours: 22,
+          untilMinutes: 60
         },
         {
-          time: "1251-8",
-          daysOff: "minim anim quis"
+          daysOff: "eu ut cupidatat",
+          fromHours: 5,
+          fromMinutes: 60,
+          untilHours: 13,
+          untilMinutes: 28
         },
         {
-          time: "1860-1566",
-          daysOff: "duis nostrud mollit"
+          daysOff: "labore minim pariatur",
+          fromHours: 21,
+          fromMinutes: 24,
+          untilHours: 11,
+          untilMinutes: 17
         },
         {
-          time: "2181-480",
-          daysOff: "ut aliquip magna"
+          daysOff: "elit cillum consectetur",
+          fromHours: 19,
+          fromMinutes: 48,
+          untilHours: 5,
+          untilMinutes: 60
         },
         {
-          time: "2062-147",
-          daysOff: "ex ut nisi"
+          daysOff: "duis sunt fugiat",
+          fromHours: 10,
+          fromMinutes: 1,
+          untilHours: 18,
+          untilMinutes: 50
         },
         {
-          time: "665-256",
-          daysOff: "culpa eu non"
+          daysOff: "irure excepteur mollit",
+          fromHours: 24,
+          fromMinutes: 17,
+          untilHours: 17,
+          untilMinutes: 1
         },
         {
-          time: "1707-259",
-          daysOff: "adipisicing anim in"
+          daysOff: "non aliqua aute",
+          fromHours: 22,
+          fromMinutes: 35,
+          untilHours: 0,
+          untilMinutes: 34
         },
         {
-          time: "2191-2159",
-          daysOff: "ex ut eu"
+          daysOff: "ex nulla ut",
+          fromHours: 23,
+          fromMinutes: 50,
+          untilHours: 11,
+          untilMinutes: 21
         },
         {
-          time: "1241-1799",
-          daysOff: "ipsum eiusmod qui"
+          daysOff: "consectetur exercitation exercitation",
+          fromHours: 8,
+          fromMinutes: 36,
+          untilHours: 0,
+          untilMinutes: 12
         },
         {
-          time: "659-964",
-          daysOff: "nostrud enim sint"
+          daysOff: "eiusmod culpa laboris",
+          fromHours: 11,
+          fromMinutes: 52,
+          untilHours: 20,
+          untilMinutes: 21
         },
         {
-          time: "227-1745",
-          daysOff: "ut mollit officia"
+          daysOff: "dolor occaecat consequat",
+          fromHours: 16,
+          fromMinutes: 26,
+          untilHours: 24,
+          untilMinutes: 13
         },
         {
-          time: "168-414",
-          daysOff: "non commodo tempor"
+          daysOff: "est laboris nostrud",
+          fromHours: 5,
+          fromMinutes: 3,
+          untilHours: 17,
+          untilMinutes: 5
         },
         {
-          time: "2243-2181",
-          daysOff: "ullamco sit cupidatat"
+          daysOff: "qui non nisi",
+          fromHours: 6,
+          fromMinutes: 23,
+          untilHours: 8,
+          untilMinutes: 26
         },
         {
-          time: "583-1445",
-          daysOff: "do sit est"
+          daysOff: "aute aute sit",
+          fromHours: 3,
+          fromMinutes: 38,
+          untilHours: 11,
+          untilMinutes: 14
         },
         {
-          time: "2009-969",
-          daysOff: "pariatur ut magna"
+          daysOff: "sint amet quis",
+          fromHours: 19,
+          fromMinutes: 50,
+          untilHours: 9,
+          untilMinutes: 60
         },
         {
-          time: "1374-1836",
-          daysOff: "eu mollit irure"
+          daysOff: "dolor cupidatat velit",
+          fromHours: 3,
+          fromMinutes: 35,
+          untilHours: 11,
+          untilMinutes: 15
         },
         {
-          time: "1368-1329",
-          daysOff: "elit excepteur quis"
+          daysOff: "aute cupidatat cillum",
+          fromHours: 15,
+          fromMinutes: 3,
+          untilHours: 22,
+          untilMinutes: 16
         },
         {
-          time: "583-1730",
-          daysOff: "occaecat ex adipisicing"
+          daysOff: "qui eu ullamco",
+          fromHours: 24,
+          fromMinutes: 57,
+          untilHours: 5,
+          untilMinutes: 27
         },
         {
-          time: "1033-699",
-          daysOff: "commodo aute laboris"
+          daysOff: "deserunt occaecat ea",
+          fromHours: 20,
+          fromMinutes: 35,
+          untilHours: 16,
+          untilMinutes: 6
         },
         {
-          time: "1245-997",
-          daysOff: "laborum magna voluptate"
+          daysOff: "adipisicing nulla excepteur",
+          fromHours: 4,
+          fromMinutes: 10,
+          untilHours: 19,
+          untilMinutes: 45
         },
         {
-          time: "424-1923",
-          daysOff: "fugiat velit minim"
+          daysOff: "ullamco commodo aliqua",
+          fromHours: 12,
+          fromMinutes: 47,
+          untilHours: 21,
+          untilMinutes: 22
         },
         {
-          time: "1269-2390",
-          daysOff: "do dolor irure"
+          daysOff: "laboris culpa sint",
+          fromHours: 20,
+          fromMinutes: 6,
+          untilHours: 24,
+          untilMinutes: 19
         },
         {
-          time: "2277-1219",
-          daysOff: "eu eiusmod est"
+          daysOff: "anim laborum labore",
+          fromHours: 11,
+          fromMinutes: 4,
+          untilHours: 21,
+          untilMinutes: 54
         },
         {
-          time: "1300-2049",
-          daysOff: "Lorem nisi esse"
+          daysOff: "mollit in quis",
+          fromHours: 10,
+          fromMinutes: 44,
+          untilHours: 16,
+          untilMinutes: 49
         },
         {
-          time: "1790-864",
-          daysOff: "id ipsum qui"
+          daysOff: "nulla do enim",
+          fromHours: 21,
+          fromMinutes: 3,
+          untilHours: 17,
+          untilMinutes: 17
         },
         {
-          time: "878-325",
-          daysOff: "dolore nostrud cillum"
+          daysOff: "ad ad id",
+          fromHours: 10,
+          fromMinutes: 5,
+          untilHours: 3,
+          untilMinutes: 0
         },
         {
-          time: "1999-1574",
-          daysOff: "qui labore officia"
+          daysOff: "duis occaecat labore",
+          fromHours: 18,
+          fromMinutes: 31,
+          untilHours: 3,
+          untilMinutes: 30
         },
         {
-          time: "1939-1913",
-          daysOff: "ullamco nostrud nulla"
+          daysOff: "sint non laborum",
+          fromHours: 8,
+          fromMinutes: 46,
+          untilHours: 8,
+          untilMinutes: 60
         },
         {
-          time: "1509-1780",
-          daysOff: "non officia voluptate"
+          daysOff: "non do consequat",
+          fromHours: 17,
+          fromMinutes: 51,
+          untilHours: 11,
+          untilMinutes: 2
         },
         {
-          time: "915-1393",
-          daysOff: "elit qui nisi"
+          daysOff: "voluptate sit laborum",
+          fromHours: 3,
+          fromMinutes: 50,
+          untilHours: 15,
+          untilMinutes: 56
         },
         {
-          time: "1671-102",
-          daysOff: "commodo et laboris"
+          daysOff: "velit cillum elit",
+          fromHours: 16,
+          fromMinutes: 10,
+          untilHours: 0,
+          untilMinutes: 55
         },
         {
-          time: "2216-2373",
-          daysOff: "duis qui reprehenderit"
+          daysOff: "minim quis consectetur",
+          fromHours: 1,
+          fromMinutes: 35,
+          untilHours: 11,
+          untilMinutes: 59
         },
         {
-          time: "1874-1072",
-          daysOff: "pariatur enim eu"
+          daysOff: "aliquip consequat esse",
+          fromHours: 16,
+          fromMinutes: 40,
+          untilHours: 5,
+          untilMinutes: 57
         },
         {
-          time: "220-1721",
-          daysOff: "enim Lorem aute"
+          daysOff: "excepteur cupidatat pariatur",
+          fromHours: 7,
+          fromMinutes: 39,
+          untilHours: 13,
+          untilMinutes: 55
         },
         {
-          time: "6-951",
-          daysOff: "et cillum deserunt"
+          daysOff: "excepteur dolore mollit",
+          fromHours: 0,
+          fromMinutes: 10,
+          untilHours: 1,
+          untilMinutes: 44
         },
         {
-          time: "2352-437",
-          daysOff: "proident in voluptate"
+          daysOff: "aliquip veniam qui",
+          fromHours: 20,
+          fromMinutes: 16,
+          untilHours: 15,
+          untilMinutes: 28
         },
         {
-          time: "478-1994",
-          daysOff: "veniam irure aliquip"
+          daysOff: "est eu consequat",
+          fromHours: 8,
+          fromMinutes: 13,
+          untilHours: 5,
+          untilMinutes: 42
         },
         {
-          time: "675-245",
-          daysOff: "quis est incididunt"
+          daysOff: "tempor cupidatat quis",
+          fromHours: 1,
+          fromMinutes: 20,
+          untilHours: 3,
+          untilMinutes: 17
         },
         {
-          time: "1097-1141",
-          daysOff: "deserunt ex enim"
+          daysOff: "quis consectetur nisi",
+          fromHours: 11,
+          fromMinutes: 31,
+          untilHours: 3,
+          untilMinutes: 16
         },
         {
-          time: "82-908",
-          daysOff: "Lorem veniam sunt"
+          daysOff: "qui consectetur adipisicing",
+          fromHours: 24,
+          fromMinutes: 57,
+          untilHours: 17,
+          untilMinutes: 18
         },
         {
-          time: "215-996",
-          daysOff: "sint consequat consectetur"
+          daysOff: "non nisi commodo",
+          fromHours: 0,
+          fromMinutes: 16,
+          untilHours: 14,
+          untilMinutes: 30
         },
         {
-          time: "2066-1733",
-          daysOff: "et do aliqua"
+          daysOff: "proident deserunt esse",
+          fromHours: 3,
+          fromMinutes: 7,
+          untilHours: 14,
+          untilMinutes: 39
         },
         {
-          time: "163-1915",
-          daysOff: "nisi sunt excepteur"
+          daysOff: "laborum anim do",
+          fromHours: 8,
+          fromMinutes: 3,
+          untilHours: 9,
+          untilMinutes: 60
         },
         {
-          time: "65-550",
-          daysOff: "ex culpa velit"
+          daysOff: "aute qui irure",
+          fromHours: 14,
+          fromMinutes: 1,
+          untilHours: 0,
+          untilMinutes: 51
         },
         {
-          time: "883-131",
-          daysOff: "est officia duis"
+          daysOff: "consectetur incididunt veniam",
+          fromHours: 19,
+          fromMinutes: 21,
+          untilHours: 4,
+          untilMinutes: 58
         },
         {
-          time: "1265-720",
-          daysOff: "consectetur laboris nisi"
+          daysOff: "commodo nisi exercitation",
+          fromHours: 9,
+          fromMinutes: 55,
+          untilHours: 13,
+          untilMinutes: 25
         },
         {
-          time: "1162-450",
-          daysOff: "et sit enim"
+          daysOff: "commodo quis ut",
+          fromHours: 21,
+          fromMinutes: 43,
+          untilHours: 18,
+          untilMinutes: 5
         },
         {
-          time: "1529-2361",
-          daysOff: "velit culpa amet"
+          daysOff: "proident duis laborum",
+          fromHours: 0,
+          fromMinutes: 31,
+          untilHours: 12,
+          untilMinutes: 27
         },
         {
-          time: "1661-2302",
-          daysOff: "veniam elit reprehenderit"
+          daysOff: "culpa pariatur tempor",
+          fromHours: 9,
+          fromMinutes: 4,
+          untilHours: 15,
+          untilMinutes: 44
         },
         {
-          time: "195-577",
-          daysOff: "culpa consectetur nulla"
+          daysOff: "esse voluptate sint",
+          fromHours: 1,
+          fromMinutes: 53,
+          untilHours: 4,
+          untilMinutes: 29
         },
         {
-          time: "948-301",
-          daysOff: "velit nulla non"
+          daysOff: "duis exercitation fugiat",
+          fromHours: 7,
+          fromMinutes: 10,
+          untilHours: 0,
+          untilMinutes: 2
         },
         {
-          time: "720-323",
-          daysOff: "aliqua sint aliquip"
+          daysOff: "mollit tempor elit",
+          fromHours: 24,
+          fromMinutes: 6,
+          untilHours: 14,
+          untilMinutes: 8
         },
         {
-          time: "2061-529",
-          daysOff: "ullamco do ut"
+          daysOff: "aute officia magna",
+          fromHours: 15,
+          fromMinutes: 24,
+          untilHours: 6,
+          untilMinutes: 20
         },
         {
-          time: "1391-2225",
-          daysOff: "nisi ut ut"
+          daysOff: "adipisicing est mollit",
+          fromHours: 13,
+          fromMinutes: 4,
+          untilHours: 19,
+          untilMinutes: 0
         },
         {
-          time: "648-2131",
-          daysOff: "nostrud nostrud ipsum"
+          daysOff: "tempor excepteur esse",
+          fromHours: 19,
+          fromMinutes: 32,
+          untilHours: 22,
+          untilMinutes: 11
         },
         {
-          time: "2169-922",
-          daysOff: "officia ea ad"
+          daysOff: "nulla esse id",
+          fromHours: 11,
+          fromMinutes: 44,
+          untilHours: 23,
+          untilMinutes: 2
         },
         {
-          time: "2253-2231",
-          daysOff: "officia Lorem enim"
+          daysOff: "sunt eu commodo",
+          fromHours: 5,
+          fromMinutes: 11,
+          untilHours: 6,
+          untilMinutes: 55
         },
         {
-          time: "862-1723",
-          daysOff: "et veniam et"
+          daysOff: "duis ullamco laboris",
+          fromHours: 5,
+          fromMinutes: 11,
+          untilHours: 19,
+          untilMinutes: 41
         },
         {
-          time: "111-1177",
-          daysOff: "labore eiusmod excepteur"
+          daysOff: "anim ad labore",
+          fromHours: 3,
+          fromMinutes: 24,
+          untilHours: 4,
+          untilMinutes: 30
         },
         {
-          time: "776-635",
-          daysOff: "dolor reprehenderit velit"
+          daysOff: "ea aliquip sit",
+          fromHours: 5,
+          fromMinutes: 24,
+          untilHours: 6,
+          untilMinutes: 13
         },
         {
-          time: "1371-208",
-          daysOff: "esse consectetur anim"
+          daysOff: "non qui cupidatat",
+          fromHours: 1,
+          fromMinutes: 31,
+          untilHours: 2,
+          untilMinutes: 47
         },
         {
-          time: "1-51",
-          daysOff: "irure ex consectetur"
+          daysOff: "tempor ipsum cillum",
+          fromHours: 7,
+          fromMinutes: 33,
+          untilHours: 12,
+          untilMinutes: 10
         },
         {
-          time: "1008-937",
-          daysOff: "proident mollit aliqua"
+          daysOff: "proident magna officia",
+          fromHours: 24,
+          fromMinutes: 1,
+          untilHours: 6,
+          untilMinutes: 53
         },
         {
-          time: "1150-1423",
-          daysOff: "deserunt excepteur fugiat"
+          daysOff: "sit commodo est",
+          fromHours: 13,
+          fromMinutes: 35,
+          untilHours: 13,
+          untilMinutes: 20
         },
         {
-          time: "1764-2323",
-          daysOff: "voluptate ullamco in"
+          daysOff: "mollit ad deserunt",
+          fromHours: 14,
+          fromMinutes: 6,
+          untilHours: 1,
+          untilMinutes: 56
         },
         {
-          time: "1691-849",
-          daysOff: "irure est aliqua"
+          daysOff: "quis non ullamco",
+          fromHours: 9,
+          fromMinutes: 8,
+          untilHours: 13,
+          untilMinutes: 9
         },
         {
-          time: "557-777",
-          daysOff: "enim cillum incididunt"
+          daysOff: "adipisicing eu officia",
+          fromHours: 24,
+          fromMinutes: 47,
+          untilHours: 13,
+          untilMinutes: 53
         },
         {
-          time: "1986-270",
-          daysOff: "laborum dolor fugiat"
+          daysOff: "laboris ut anim",
+          fromHours: 24,
+          fromMinutes: 51,
+          untilHours: 6,
+          untilMinutes: 29
         },
         {
-          time: "469-782",
-          daysOff: "proident eu ut"
+          daysOff: "ullamco dolor magna",
+          fromHours: 19,
+          fromMinutes: 40,
+          untilHours: 6,
+          untilMinutes: 53
         },
         {
-          time: "1313-1651",
-          daysOff: "cillum incididunt fugiat"
+          daysOff: "officia dolor aliquip",
+          fromHours: 24,
+          fromMinutes: 35,
+          untilHours: 17,
+          untilMinutes: 57
         },
         {
-          time: "1681-2240",
-          daysOff: "laboris ex nulla"
+          daysOff: "pariatur ipsum magna",
+          fromHours: 5,
+          fromMinutes: 57,
+          untilHours: 9,
+          untilMinutes: 55
         },
         {
-          time: "1699-1069",
-          daysOff: "cupidatat aliqua cillum"
+          daysOff: "officia sint pariatur",
+          fromHours: 13,
+          fromMinutes: 34,
+          untilHours: 10,
+          untilMinutes: 3
         },
         {
-          time: "1934-727",
-          daysOff: "non deserunt laborum"
+          daysOff: "dolore laboris nisi",
+          fromHours: 20,
+          fromMinutes: 59,
+          untilHours: 23,
+          untilMinutes: 43
         },
         {
-          time: "236-1221",
-          daysOff: "do duis proident"
+          daysOff: "pariatur veniam nulla",
+          fromHours: 18,
+          fromMinutes: 40,
+          untilHours: 5,
+          untilMinutes: 3
         },
         {
-          time: "760-1284",
-          daysOff: "sunt anim quis"
+          daysOff: "esse exercitation qui",
+          fromHours: 2,
+          fromMinutes: 9,
+          untilHours: 0,
+          untilMinutes: 54
         },
         {
-          time: "2044-706",
-          daysOff: "exercitation enim proident"
+          daysOff: "labore quis amet",
+          fromHours: 15,
+          fromMinutes: 16,
+          untilHours: 15,
+          untilMinutes: 36
         },
         {
-          time: "1561-311",
-          daysOff: "ullamco anim do"
+          daysOff: "esse nulla fugiat",
+          fromHours: 9,
+          fromMinutes: 13,
+          untilHours: 7,
+          untilMinutes: 51
         },
         {
-          time: "1667-315",
-          daysOff: "cupidatat veniam laboris"
+          daysOff: "veniam culpa duis",
+          fromHours: 11,
+          fromMinutes: 27,
+          untilHours: 5,
+          untilMinutes: 9
         },
         {
-          time: "216-620",
-          daysOff: "nulla tempor duis"
+          daysOff: "officia qui consequat",
+          fromHours: 18,
+          fromMinutes: 18,
+          untilHours: 1,
+          untilMinutes: 27
         },
         {
-          time: "110-408",
-          daysOff: "exercitation incididunt commodo"
+          daysOff: "fugiat dolor incididunt",
+          fromHours: 6,
+          fromMinutes: 60,
+          untilHours: 4,
+          untilMinutes: 59
         },
         {
-          time: "873-2248",
-          daysOff: "ullamco velit ea"
+          daysOff: "commodo quis aute",
+          fromHours: 13,
+          fromMinutes: 43,
+          untilHours: 2,
+          untilMinutes: 19
         },
         {
-          time: "576-408",
-          daysOff: "reprehenderit laborum nisi"
+          daysOff: "minim velit tempor",
+          fromHours: 2,
+          fromMinutes: 21,
+          untilHours: 2,
+          untilMinutes: 43
         },
         {
-          time: "1398-1376",
-          daysOff: "sit do quis"
+          daysOff: "magna proident ad",
+          fromHours: 8,
+          fromMinutes: 44,
+          untilHours: 7,
+          untilMinutes: 32
         },
         {
-          time: "1833-64",
-          daysOff: "labore et minim"
+          daysOff: "non dolor proident",
+          fromHours: 12,
+          fromMinutes: 36,
+          untilHours: 3,
+          untilMinutes: 47
         },
         {
-          time: "853-623",
-          daysOff: "duis culpa quis"
+          daysOff: "in duis in",
+          fromHours: 11,
+          fromMinutes: 57,
+          untilHours: 13,
+          untilMinutes: 57
         },
         {
-          time: "741-686",
-          daysOff: "ea aliqua incididunt"
+          daysOff: "dolor enim enim",
+          fromHours: 19,
+          fromMinutes: 55,
+          untilHours: 2,
+          untilMinutes: 44
         },
         {
-          time: "1687-1190",
-          daysOff: "adipisicing ipsum sunt"
+          daysOff: "tempor mollit veniam",
+          fromHours: 0,
+          fromMinutes: 35,
+          untilHours: 12,
+          untilMinutes: 11
         },
         {
-          time: "790-1594",
-          daysOff: "nulla eu mollit"
+          daysOff: "cupidatat velit Lorem",
+          fromHours: 7,
+          fromMinutes: 5,
+          untilHours: 12,
+          untilMinutes: 34
         },
         {
-          time: "2125-655",
-          daysOff: "mollit velit exercitation"
+          daysOff: "dolore mollit duis",
+          fromHours: 17,
+          fromMinutes: 1,
+          untilHours: 23,
+          untilMinutes: 47
         },
         {
-          time: "636-573",
-          daysOff: "ex irure enim"
+          daysOff: "duis minim culpa",
+          fromHours: 6,
+          fromMinutes: 16,
+          untilHours: 22,
+          untilMinutes: 27
         },
         {
-          time: "847-1525",
-          daysOff: "aliquip sint et"
+          daysOff: "quis dolore consequat",
+          fromHours: 8,
+          fromMinutes: 52,
+          untilHours: 16,
+          untilMinutes: 39
         },
         {
-          time: "1948-1388",
-          daysOff: "exercitation enim aliqua"
+          daysOff: "aliquip ea sit",
+          fromHours: 17,
+          fromMinutes: 12,
+          untilHours: 6,
+          untilMinutes: 21
         },
         {
-          time: "167-1288",
-          daysOff: "anim sunt sit"
+          daysOff: "esse laboris consectetur",
+          fromHours: 14,
+          fromMinutes: 31,
+          untilHours: 12,
+          untilMinutes: 5
         },
         {
-          time: "429-1961",
-          daysOff: "irure culpa aute"
+          daysOff: "aliqua ipsum mollit",
+          fromHours: 1,
+          fromMinutes: 11,
+          untilHours: 9,
+          untilMinutes: 14
         },
         {
-          time: "587-264",
-          daysOff: "qui irure nulla"
+          daysOff: "duis aute sit",
+          fromHours: 23,
+          fromMinutes: 32,
+          untilHours: 23,
+          untilMinutes: 27
         },
         {
-          time: "1972-1979",
-          daysOff: "occaecat aliquip nostrud"
+          daysOff: "consectetur esse ullamco",
+          fromHours: 17,
+          fromMinutes: 60,
+          untilHours: 1,
+          untilMinutes: 54
         },
         {
-          time: "790-1388",
-          daysOff: "enim aliquip ad"
+          daysOff: "sunt cillum enim",
+          fromHours: 5,
+          fromMinutes: 33,
+          untilHours: 15,
+          untilMinutes: 17
         },
         {
-          time: "1225-1936",
-          daysOff: "Lorem excepteur aute"
+          daysOff: "adipisicing id minim",
+          fromHours: 11,
+          fromMinutes: 20,
+          untilHours: 1,
+          untilMinutes: 54
         },
         {
-          time: "1317-1651",
-          daysOff: "nulla tempor adipisicing"
+          daysOff: "aliqua enim qui",
+          fromHours: 8,
+          fromMinutes: 8,
+          untilHours: 14,
+          untilMinutes: 60
         },
         {
-          time: "1844-883",
-          daysOff: "in sint esse"
+          daysOff: "ut deserunt anim",
+          fromHours: 8,
+          fromMinutes: 1,
+          untilHours: 4,
+          untilMinutes: 10
         },
         {
-          time: "810-1850",
-          daysOff: "adipisicing ex nostrud"
+          daysOff: "elit aliqua do",
+          fromHours: 2,
+          fromMinutes: 54,
+          untilHours: 22,
+          untilMinutes: 17
         },
         {
-          time: "67-1920",
-          daysOff: "nulla nostrud occaecat"
+          daysOff: "eu dolore et",
+          fromHours: 24,
+          fromMinutes: 13,
+          untilHours: 5,
+          untilMinutes: 19
         },
         {
-          time: "1807-1829",
-          daysOff: "excepteur enim sint"
+          daysOff: "commodo laborum ex",
+          fromHours: 9,
+          fromMinutes: 37,
+          untilHours: 3,
+          untilMinutes: 8
         },
         {
-          time: "1865-2193",
-          daysOff: "eu ut id"
+          daysOff: "excepteur mollit ad",
+          fromHours: 0,
+          fromMinutes: 36,
+          untilHours: 9,
+          untilMinutes: 59
         },
         {
-          time: "754-1480",
-          daysOff: "do deserunt dolor"
+          daysOff: "reprehenderit consequat nisi",
+          fromHours: 14,
+          fromMinutes: 40,
+          untilHours: 17,
+          untilMinutes: 36
         },
         {
-          time: "594-2059",
-          daysOff: "voluptate esse ad"
+          daysOff: "enim sit cupidatat",
+          fromHours: 10,
+          fromMinutes: 40,
+          untilHours: 1,
+          untilMinutes: 32
         },
         {
-          time: "977-1109",
-          daysOff: "officia eiusmod qui"
+          daysOff: "est aute laborum",
+          fromHours: 14,
+          fromMinutes: 24,
+          untilHours: 10,
+          untilMinutes: 28
         },
         {
-          time: "1087-1731",
-          daysOff: "anim dolore proident"
+          daysOff: "dolore amet dolor",
+          fromHours: 3,
+          fromMinutes: 32,
+          untilHours: 18,
+          untilMinutes: 57
         },
         {
-          time: "1574-2245",
-          daysOff: "quis eiusmod nostrud"
+          daysOff: "et consectetur exercitation",
+          fromHours: 4,
+          fromMinutes: 0,
+          untilHours: 16,
+          untilMinutes: 29
         },
         {
-          time: "893-2187",
-          daysOff: "aliqua do do"
+          daysOff: "do laboris labore",
+          fromHours: 19,
+          fromMinutes: 7,
+          untilHours: 24,
+          untilMinutes: 33
         },
         {
-          time: "1905-960",
-          daysOff: "reprehenderit amet officia"
+          daysOff: "esse aliqua commodo",
+          fromHours: 16,
+          fromMinutes: 59,
+          untilHours: 0,
+          untilMinutes: 47
         },
         {
-          time: "2010-1318",
-          daysOff: "irure voluptate quis"
+          daysOff: "incididunt aliquip sit",
+          fromHours: 20,
+          fromMinutes: 14,
+          untilHours: 23,
+          untilMinutes: 48
         },
         {
-          time: "390-279",
-          daysOff: "ipsum adipisicing cillum"
+          daysOff: "veniam mollit amet",
+          fromHours: 2,
+          fromMinutes: 48,
+          untilHours: 4,
+          untilMinutes: 17
         },
         {
-          time: "1248-2382",
-          daysOff: "id ut laborum"
+          daysOff: "anim est excepteur",
+          fromHours: 3,
+          fromMinutes: 18,
+          untilHours: 6,
+          untilMinutes: 55
         },
         {
-          time: "1585-1332",
-          daysOff: "aliqua proident id"
+          daysOff: "nulla aliqua cupidatat",
+          fromHours: 22,
+          fromMinutes: 22,
+          untilHours: 19,
+          untilMinutes: 27
         },
         {
-          time: "2292-1128",
-          daysOff: "officia proident elit"
+          daysOff: "duis labore duis",
+          fromHours: 1,
+          fromMinutes: 0,
+          untilHours: 20,
+          untilMinutes: 9
         },
         {
-          time: "1157-551",
-          daysOff: "reprehenderit sint excepteur"
+          daysOff: "cillum sunt nisi",
+          fromHours: 11,
+          fromMinutes: 34,
+          untilHours: 10,
+          untilMinutes: 47
         },
         {
-          time: "2155-121",
-          daysOff: "nulla veniam eiusmod"
+          daysOff: "ea ut occaecat",
+          fromHours: 23,
+          fromMinutes: 35,
+          untilHours: 10,
+          untilMinutes: 16
         },
         {
-          time: "1462-331",
-          daysOff: "aliqua cupidatat est"
+          daysOff: "dolor velit nulla",
+          fromHours: 12,
+          fromMinutes: 25,
+          untilHours: 3,
+          untilMinutes: 23
         },
         {
-          time: "647-2092",
-          daysOff: "aute amet sit"
+          daysOff: "laboris proident excepteur",
+          fromHours: 11,
+          fromMinutes: 35,
+          untilHours: 7,
+          untilMinutes: 45
         },
         {
-          time: "707-190",
-          daysOff: "voluptate occaecat elit"
+          daysOff: "ex sint ea",
+          fromHours: 1,
+          fromMinutes: 38,
+          untilHours: 5,
+          untilMinutes: 14
         },
         {
-          time: "1594-1873",
-          daysOff: "nulla dolor nostrud"
+          daysOff: "do culpa sint",
+          fromHours: 11,
+          fromMinutes: 18,
+          untilHours: 16,
+          untilMinutes: 24
         },
         {
-          time: "2379-535",
-          daysOff: "id incididunt tempor"
+          daysOff: "aliquip est qui",
+          fromHours: 11,
+          fromMinutes: 41,
+          untilHours: 2,
+          untilMinutes: 0
         },
         {
-          time: "2280-880",
-          daysOff: "est cillum eu"
+          daysOff: "laboris nostrud aliqua",
+          fromHours: 13,
+          fromMinutes: 56,
+          untilHours: 3,
+          untilMinutes: 44
         },
         {
-          time: "926-1563",
-          daysOff: "quis duis ea"
+          daysOff: "qui id pariatur",
+          fromHours: 8,
+          fromMinutes: 13,
+          untilHours: 1,
+          untilMinutes: 32
         },
         {
-          time: "1050-1968",
-          daysOff: "in adipisicing sunt"
+          daysOff: "cupidatat voluptate pariatur",
+          fromHours: 10,
+          fromMinutes: 50,
+          untilHours: 20,
+          untilMinutes: 20
         },
         {
-          time: "1450-22",
-          daysOff: "consequat ex magna"
+          daysOff: "aliqua id occaecat",
+          fromHours: 9,
+          fromMinutes: 40,
+          untilHours: 11,
+          untilMinutes: 53
         },
         {
-          time: "764-2243",
-          daysOff: "laboris quis in"
+          daysOff: "cupidatat voluptate deserunt",
+          fromHours: 24,
+          fromMinutes: 57,
+          untilHours: 22,
+          untilMinutes: 44
         },
         {
-          time: "660-1936",
-          daysOff: "Lorem proident cupidatat"
+          daysOff: "culpa Lorem commodo",
+          fromHours: 24,
+          fromMinutes: 31,
+          untilHours: 12,
+          untilMinutes: 46
         },
         {
-          time: "778-2254",
-          daysOff: "dolore ea aute"
+          daysOff: "id Lorem cillum",
+          fromHours: 19,
+          fromMinutes: 40,
+          untilHours: 17,
+          untilMinutes: 28
         }
       ]);
     });

@@ -16,104 +16,124 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex("supervisors").insert([
         {
-          name: "Angie Mathis",
-          serialNumber: "96-blue",
-          hireDate: "1990-06-30T01:50:20 +07:00"
+          name: "Wade Holt",
+          aNumber: "blue-341",
+          schedule: "2016-06-05T12:15:48 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Raymond Moses",
-          serialNumber: "46-green",
-          hireDate: "1999-06-01T06:33:35 +07:00"
+          name: "Diann Glass",
+          aNumber: "green-344",
+          schedule: "2018-03-27T08:51:53 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Hopkins Golden",
-          serialNumber: "374-green",
-          hireDate: "2006-12-26T05:01:43 +07:00"
+          name: "Cross Sawyer",
+          aNumber: "blue-18",
+          schedule: "2015-02-08T05:12:28 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Desiree Ward",
-          serialNumber: "98-green",
-          hireDate: "2006-11-07T05:34:43 +07:00"
+          name: "Joyce Farmer",
+          aNumber: "brown-149",
+          schedule: "2015-05-27T08:14:49 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Randi Barron",
-          serialNumber: "109-green",
-          hireDate: "1993-09-27T02:05:28 +07:00"
+          name: "Wendi Forbes",
+          aNumber: "blue-201",
+          schedule: "2019-06-06T10:21:48 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Irwin Pickett",
-          serialNumber: "75-green",
-          hireDate: "2019-03-25T08:21:20 +07:00"
+          name: "Marva Macias",
+          aNumber: "blue-51",
+          schedule: "2016-06-26T07:07:21 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Sharp Hodges",
-          serialNumber: "319-brown",
-          hireDate: "1998-02-10T08:44:51 +07:00"
+          name: "Louisa Galloway",
+          aNumber: "green-192",
+          schedule: "2017-06-12T01:16:51 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Kidd Bullock",
-          serialNumber: "67-brown",
-          hireDate: "2015-04-18T10:55:15 +07:00"
+          name: "Barton Mann",
+          aNumber: "blue-264",
+          schedule: "2014-03-28T09:11:24 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Pamela Carrillo",
-          serialNumber: "325-brown",
-          hireDate: "1999-09-07T01:09:42 +07:00"
+          name: "Greta Rios",
+          aNumber: "brown-102",
+          schedule: "2017-11-29T12:57:30 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Billie Fuller",
-          serialNumber: "393-blue",
-          hireDate: "1997-05-04T03:37:59 +07:00"
+          name: "Sarah William",
+          aNumber: "blue-36",
+          schedule: "2019-09-25T08:49:42 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Nanette Henderson",
-          serialNumber: "38-blue",
-          hireDate: "2003-11-27T08:33:36 +07:00"
+          name: "Spencer Herrera",
+          aNumber: "brown-368",
+          schedule: "2014-11-26T02:38:24 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Earnestine Jacobson",
-          serialNumber: "414-brown",
-          hireDate: "1998-08-09T09:34:29 +07:00"
+          name: "Shari Finley",
+          aNumber: "green-107",
+          schedule: "2019-10-03T02:42:55 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Bryan Hutchinson",
-          serialNumber: "219-green",
-          hireDate: "2001-05-02T12:01:49 +07:00"
+          name: "Annmarie Morris",
+          aNumber: "green-206",
+          schedule: "2015-03-22T03:31:57 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Doris Brown",
-          serialNumber: "258-green",
-          hireDate: "2003-07-05T10:15:18 +07:00"
+          name: "Madelyn Hess",
+          aNumber: "green-4",
+          schedule: "2016-12-06T06:55:49 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Ruth Hoffman",
-          serialNumber: "361-green",
-          hireDate: "1999-04-25T12:10:06 +07:00"
+          name: "Howard Hughes",
+          aNumber: "blue-102",
+          schedule: "2014-06-21T06:55:35 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Kathleen George",
-          serialNumber: "338-brown",
-          hireDate: "2012-01-15T09:25:30 +07:00"
+          name: "Herring Hahn",
+          aNumber: "brown-12",
+          schedule: "2015-08-07T06:10:02 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Buckner Wheeler",
-          serialNumber: "314-green",
-          hireDate: "1997-11-20T06:54:38 +07:00"
+          name: "Skinner Branch",
+          aNumber: "brown-180",
+          schedule: "2019-10-05T12:50:40 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Dotson Mccarthy",
-          serialNumber: "261-green",
-          hireDate: "2016-09-03T05:55:36 +07:00"
+          name: "Leanna Frank",
+          aNumber: "brown-367",
+          schedule: "2015-01-03T10:57:02 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Aimee Moreno",
-          serialNumber: "99-blue",
-          hireDate: "2017-06-27T03:52:49 +07:00"
+          name: "Tabatha Pratt",
+          aNumber: "blue-291",
+          schedule: "2017-03-23T08:20:02 +07:00",
+          role: "supervisor"
         },
         {
-          name: "Singleton Craig",
-          serialNumber: "376-blue",
-          hireDate: "2003-03-06T12:36:28 +07:00"
+          name: "Corinne Tanner",
+          aNumber: "blue-189",
+          schedule: "2016-04-06T05:45:56 +07:00",
+          role: "supervisor"
         }
       ]);
     });
